@@ -3,11 +3,11 @@
 
 .app {
     width: 720px;
-    margin: 72px auto;
+    margin: 72px auto 144px;
 
     @include mobile {
         width: 100%;
-        margin: 32px 0 0;
+        margin: 32px 0 64px;
         padding: 0 16px;
     }
 }
