@@ -14,16 +14,24 @@ const Table: FC<TableProps> = ({ countries }) => {
 
   return (
     <table className={styles.table}>
-      <tr>
-        <th className={styles.tableHead}>Country Code</th>
-        <th className={styles.tableHead}>Country Name</th>
-      </tr>
+      <thead>
+        <tr>
+          <th className={styles.tableHead}>Country Code</th>
+          <th className={styles.tableHead}>Country Name</th>
+        </tr>
+      </thead>
 
-      {countries.map((country) => {
-        return (
-          <Row key={country.code} code={country.code} name={country.name}></Row>
-        );
-      })}
+      <tbody>
+        {countries.map((country) => {
+          return (
+            <Row
+              key={country.code}
+              code={country.code}
+              name={country.name}
+            ></Row>
+          );
+        })}
+      </tbody>
     </table>
   );
 };

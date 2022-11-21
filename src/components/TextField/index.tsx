@@ -10,6 +10,7 @@ interface TextFieldProps {
 const TextField: FC<TextFieldProps> = ({ onChange, placeholder, value }) => {
   return (
     <input
+      autoFocus
       className={styles.textField}
       type="text"
       value={value}

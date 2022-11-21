@@ -1,0 +1,33 @@
+@import 'src/styles/variables.scss';
+@import 'src/styles/mixins.scss';
+
+.app {
+    width: 720px;
+    margin: 72px auto;
+
+    @include mobile {
+        width: 100%;
+        margin: 32px 0 0;
+        padding: 0 16px;
+    }
+}
+
+.paragraph {
+    color: $grey;
+    font-weight: 400;
+    font-size: 12px;
+    margin: 0 0 10px 8px;
+}
+
+.loading {
+    font-size: 12px;
+    padding: 10px 0 0 8px;
+  
+}
+
+.somethingWentWrong {
+    font-size: 12px;
+    padding: 10px 0 0 8px;
+    color: $red;
+}
+
