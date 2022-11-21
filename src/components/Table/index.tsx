@@ -13,7 +13,7 @@ const Table: FC<TableProps> = ({ countries }) => {
   }
 
   return (
-    <table className={styles.table}>
+    <table data-testid="table" className={styles.table}>
       <thead>
         <tr>
           <th className={styles.tableHead}>Country Code</th>
