@@ -1,0 +1,26 @@
+@import 'src/styles/variables.scss';
+
+.table {
+    border-radius: 8px;
+    border: 2px solid $blue;
+    width: 100%;
+    margin-top: 16px;
+    padding: 6px;
+}
+
+.tableHead {
+    border-radius: 6px;
+    border: 1px solid $grey;
+    background-color: $blue;
+    color: $white;
+    width: 50%;
+    height: 24px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.noResult {
+    font-size: 12px;
+    padding: 10px 0 0 8px;
+    color: $red;
+}
